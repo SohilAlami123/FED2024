@@ -1,129 +1,32 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
 
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-	--color-border:#111;
-}
-
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-/* LOGO */
-
-header a {
-	/* positioneren */
-	display: grid;
-	grid-template-columns: min-content min-content;
-	grid-gap: .25em;
-	align-items: center;
-	margin: auto;
-	font-weight: bold;
-}
-
-header img {
-	height: 1.875em;
-}
-
-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: auto;
-  }
-  
-  
-  section ul {
-	padding: 0;
-  }
-  
-  section li {
-	list-style-type: none;
-  }
-  
-  section img {
-	width: 23.4375em;
-	height: 18.9375em;
-	justify-content: center;
-	margin: auto;
-	padding-top: 1.25em;
-	padding-bottom: 1.25em;
-	display: flex;
-  }
-  
-  section h3 {
-	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 600;
-	line-height: 1.5em;
-	letter-spacing: -0.3px;
-	font-size: 1.25em;
-	margin-bottom: 0.3125em;
-	justify-content: center;
-	padding-top: 1.875em;
-	margin: auto;
-  }
-  
-  section h4 {
-	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 600;
-	line-height: 1.5em;
-	letter-spacing: -0.01875em;
-	font-size: 1.25em;
-	margin-bottom: 0.3125em;
-	margin: auto;
-	justify-content: center;
-	display: flex;
-  }
-  
-  section p {
-	font-weight: 400;
-	line-height: 1.25em;
-	color: var(--color-text);
-	display: block;
-	padding: 0em 1.875em;
+/* Basis style elementen */
+*,
+*::after,
+*::before {
 	box-sizing: border-box;
-	width: 100%;
-	text-align: center;
-  }
-  
-  section a {
-	color: var(--color-text);
-	display: table;
-	vertical-align: text-bottom;
-	font-size: 1em;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
-	min-height: 2.5em;
-	line-height: 2.5em;
-	background-color: transparent;
-	border-style: solid;
-	border-width: 0.0625em;
-	border-color: var(--color-border);
-	box-shadow: none;
-	border-radius: 0.25em;
-	margin: auto;
-	text-decoration: none;
-  }
-  
-  
-  
+}
+
+button,
+summary {
+	cursor: pointer;
+}
+
+html {
+	font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+	background-color: var(--general-background);
+	color: var(--general-color);
+}
+
+
+/* CUSTOM PROPERTIES kleuren voor de website*/
+
+:root {
+	--color-text: #111;
+	--color-background: #eee;
+	--general-color: #012;
+	--general-background: #fff;
+}
