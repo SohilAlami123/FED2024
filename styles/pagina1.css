@@ -388,7 +388,7 @@ section:nth-of-type(5) p {
 /* Carrousel 2 */
 /* Section 6 regel 391 t/m 502 */
 
-main section:nth-of-type(6) {
+/* main section:nth-of-type(6) {
   --caroCarrouselMainColor: #333;
   --caroCarrouselAccentColor: #1b75b3;
   --caroCarrouselShadeColor: #ddd9;
@@ -428,7 +428,127 @@ section:nth-of-type(6) a:hover {
   color: #FFFFFF;
   background-color: #067A46;
 }
+ */
+ main section:nth-of-type(6) {
+  --caroCarrouselMainColor: #333;
+  --caroCarrouselAccentColor: #1b75b3;
+  --caroCarrouselShadeColor: #ddd9;
+  position: relative;
+  outline: none;
+  padding-bottom: 1em;
+  border-bottom: 0.0625em solid var(--border-sections);
+  padding-bottom: 2.5em;
+  background-color: var(--kleur-wit);
+}
 
+section:nth-of-type(6) {
+  border-bottom: 0.0625em solid var(--border-sections);
+}
+
+section:nth-of-type(6) h2 {
+  text-align: center;
+  padding-top: 1em;
+}
+
+section:nth-of-type(6) a {
+  color: var(--a-tekst-color-versie1);
+  display: table;
+  vertical-align: text-bottom;
+  font-size: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  min-height: 2.5em;
+  line-height: 2.5em;
+  background-color: var(--transparent-kleur);
+  border-style: solid;
+  border-width: 0.0625em;
+  border-color: var(--a-border-color-versie1);
+  box-shadow: none;
+  border-radius: 0.25em;
+  margin: auto;
+  text-decoration: none;
+}
+
+/* dark mode voor de carrousel */
+@media (prefers-color-scheme: dark) {
+  .caroCarrousel2 {
+    --caroCarrouselMainColor: #ccc;
+    --caroCarrouselShadeColor: #4449;
+  }
+}
+
+/* de carrousel elementen container (gemaakt met Sanne ), begrijp niet helemaal*/
+main section:nth-of-type(6) ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  padding: 0 1.25em;
+  padding-bottom: 2.5em;
+  overflow: auto;
+  padding-top: 1em;
+  scroll-snap-type: inline mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+main section:nth-of-type(6) ul::-webkit-scrollbar {
+  display: none;
+}
+
+/* de carrousel elementen */
+main section:nth-of-type(6) ul li {
+  flex-basis: 70%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+main section:nth-of-type(6) ul li h3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0;
+  min-height: 10em;
+  background-image: var(--gradient-image);
+  color: white;
+  padding: 1em;
+  border-radius: 0.3125em 0.3125em 0em 0em;
+}
+
+main section:nth-of-type(6) ul li p {
+  color: var(--kleur-wit);
+  font-family: Agrandir, Verdana, Geneva, sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  max-width: 80%;
+  position: absolute;
+  top: 1.875em;
+  left: 1.125em;
+}
+
+main section:nth-of-type(6) ul li p:nth-of-type(odd){
+  top: 3em;
+}
+
+main section:nth-of-type(6) ul li p:nth-of-type(5){
+  top: 3em;
+  left: 1.125em;
+}
+
+main section:nth-of-type(6) ul li>img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.3125em;
+  margin: auto;
+  box-shadow: var(--boxshadow-versie2) 0em 0.1875em 0.1875em;
+  height: 19.6875em;
+}
 
 
 /* de stijlen voor jouw content hier */

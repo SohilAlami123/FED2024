@@ -21,6 +21,20 @@ body {
 	color: var(--general-color);
 }
 
+header {
+	min-height: 4em;
+    padding: 0 1em;
+    background-color: var(--header-background-color);
+    line-height: 1;
+    box-shadow: var(--nav-boxshadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 
 /* CUSTOM PROPERTIES kleuren voor de website*/
 
